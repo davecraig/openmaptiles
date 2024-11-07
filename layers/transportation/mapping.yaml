@@ -201,6 +201,10 @@ expressway_field: &expressway
   key: expressway
   name: expressway
   type: bool
+junction_field: &junction
+  key: junction
+  name: junction
+  type: string
 
 tables:
 # etldoc: imposm3 -> osm_highway_linestring
@@ -251,6 +255,7 @@ tables:
     - *sac_scale
     - *surface
     - *expressway
+    - *junction
     mapping:
       highway:
       - motorway
