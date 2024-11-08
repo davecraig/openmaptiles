@@ -205,6 +205,10 @@ junction_field: &junction
   key: junction
   name: junction
   type: string
+crossing_field: &crossing
+  key: crossing
+  name: crossing
+  type: string
 
 tables:
 # etldoc: imposm3 -> osm_highway_linestring
@@ -457,6 +461,7 @@ tables:
     - *name
     - *name_en
     - *name_de
+    - *crossing
     - name: tags
       type: hstore_tags
     - name: ref
@@ -465,6 +470,7 @@ tables:
     mapping:
       highway:
       - motorway_junction
+      - crossing
 
 # TODO: Future table for joining networks
 # etldoc: imposm3 -> osm_route_member
