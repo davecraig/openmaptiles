@@ -205,6 +205,10 @@ junction_field: &junction
   key: junction
   name: junction
   type: string
+crossing_field: &crossing
+  key: crossing
+  name: crossing
+  type: string
 
 tables:
 # etldoc: imposm3 -> osm_highway_linestring
@@ -256,6 +260,7 @@ tables:
     - *surface
     - *expressway
     - *junction
+    - *crossing
     mapping:
       highway:
       - motorway
@@ -285,6 +290,7 @@ tables:
       - busway
       - bus_guideway
       - construction
+      - crossing
       public_transport:
       - platform
       man_made:
