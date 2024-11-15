@@ -80,6 +80,21 @@ def_poi_mapping_barrier: &poi_mapping_barrier
 def_poi_mapping_building: &poi_mapping_building
   - dormitory
 
+# entrance values , see http://taginfo.openstreetmap.org/keys/entrance#values
+def_poi_mapping_entrance: &poi_mapping_entrance
+  - main
+  - secondary
+  - service
+  - exit
+  - entrance
+  - emergency
+  - staircase
+  - home
+  - garage
+  - shop
+  - yes
+  - no
+
 # highway values , see http://taginfo.openstreetmap.org/keys/highway#values
 def_poi_mapping_highway: &poi_mapping_highway
   - bus_stop
@@ -499,6 +514,9 @@ def_poi_fields: &poi_fields
   - name: station
     key: station
     type: string
+  - name: entrance
+    key: entrance
+    type: string
   - name: funicular
     key: funicular
     type: string
@@ -541,6 +559,7 @@ def_poi_mapping: &poi_mapping
   amenity: *poi_mapping_amenity
   barrier: *poi_mapping_barrier
   building: *poi_mapping_building
+  entrance: *poi_mapping_entrance
   highway: *poi_mapping_highway
   historic: *poi_mapping_historic
   landuse: *poi_mapping_landuse
@@ -551,7 +570,7 @@ def_poi_mapping: &poi_mapping
   sport: *poi_mapping_sport
   tourism: *poi_mapping_tourism
   waterway: *poi_mapping_waterway
-
+  
 tables:
   # etldoc: imposm3 -> osm_poi_point
   poi_point:
