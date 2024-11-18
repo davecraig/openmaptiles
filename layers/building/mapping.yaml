@@ -13,6 +13,9 @@ tables:
       type: id
     - name: geometry
       type: validated_geometry
+    - name: name
+      key: name
+      type: string
     - name: area
       type: area
     - name: material
