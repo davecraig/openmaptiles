@@ -209,6 +209,10 @@ crossing_field: &crossing
   key: crossing
   name: crossing
   type: string
+footway_field: &footway
+  key: footway
+  name: footway
+  type: string
 
 tables:
 # etldoc: imposm3 -> osm_highway_linestring
@@ -260,6 +264,7 @@ tables:
     - *surface
     - *expressway
     - *junction
+    - *footway
     mapping:
       highway:
       - motorway
