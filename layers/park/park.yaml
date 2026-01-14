@@ -5,7 +5,7 @@ layer:
     such as parks tagged with [`boundary=national_park`](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dnational_park),
     [`boundary=protected_area`](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dprotected_area),
     or [`leisure=nature_reserve`](https://wiki.openstreetmap.org/wiki/Tag:leisure%3Dnature_reserve).
-  buffer_size: 4
+  buffer_size: 0
   fields:
     class:
       description: |
